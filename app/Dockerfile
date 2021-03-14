@@ -6,4 +6,4 @@ RUN npm i -g typescript
 
 RUN yarn
 
-CMD [ "/bin/bash", "-c", "yarn && yarn build" ]
+CMD [ "/bin/bash", "-c", "yarn && yarn start" ]
