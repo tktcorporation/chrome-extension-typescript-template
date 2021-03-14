@@ -10,7 +10,8 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    working-directory: ./app
+    env:
+      working-directory: ./app
 
     strategy:
       matrix:
