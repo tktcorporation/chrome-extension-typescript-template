@@ -5,13 +5,15 @@ on:
     branches: [ $default-branch ]
   pull_request:
 
+defaults:
+  run:
+    shell: bash
+    working-directory: ./app
+
 jobs:
   test:
 
     runs-on: ubuntu-latest
-
-    env:
-      working-directory: ./app
 
     strategy:
       matrix:
