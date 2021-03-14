@@ -7,7 +7,7 @@ module.exports = {
   mode: process.env.NODE_ENV || 'development',
   devtool: 'inline-source-map',
   entry: {
-    event: `${__dirname}/src/event.ts`,
+    background: `${__dirname}/src/background.ts`,
   },
   module: {
     rules: [
